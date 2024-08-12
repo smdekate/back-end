@@ -13,6 +13,9 @@ app.get('/', (req, res) => {
 app.get('/twitter', (req, res) => {
     res.send('this is twitter page')
 })
+app.get('/deploy', (req, res) => {
+    res.send('deployed on render')
+})
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
